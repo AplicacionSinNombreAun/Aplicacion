@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{88514F3C-F733-4173-A1F1-F13AC9BCC367}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Aplicacion</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookOAuthRequest.xaml.cs">
+      <DependentUpon>FacebookOAuthRequest.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookUser\Data.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookUser\FacebookUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookUser\Picture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\GraphApi.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\IRestForms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\OAuthResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\Param.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\RestForms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Login\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookOAuthRequest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Login\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicacion.FacebookLogin.FacebookOAuthRequest">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout x:Name="ProgressIndicatorLayout" VerticalOptions="Center" Grid.Row="0" IsVisible="True">
+            <ActivityIndicator HorizontalOptions="Center" IsRunning="True" IsEnabled="True" IsVisible="True" />
+            <Label x:Name="ProgressIndicatorText" HorizontalOptions="Center" HorizontalTextAlignment="Center" Text="Autenticando"/>
+        </StackLayout>
+        <WebView x:Name="WebClient" Grid.Row="0" IsVisible="False" />
+    </Grid>
+
+</ContentPage>
