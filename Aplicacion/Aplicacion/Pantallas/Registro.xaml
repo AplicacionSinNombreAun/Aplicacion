@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicacion.Pantallas.Registro">
+    <StackLayout>
+    <Grid VerticalOptions="FillAndExpand"
+          Margin="5">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="30*" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="80*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+
+
+
+        <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="Red" HeightRequest="1" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+
+        <Entry x:Name="User" Placeholder="Usuario" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" ></Entry>
+        <Entry x:Name="Pass" Placeholder="Constraseña" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"></Entry>
+        <Entry x:Name="Nombre" Placeholder="Nombre" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"></Entry>
+        <Entry x:Name="Email" Placeholder="Email" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"></Entry>
+        <Button Clicked="ClickRegistrarButton" Text="Régistrate"  Grid.Row="6" Grid.Column="1"  BackgroundColor="#009a00" TextColor="White"></Button>
+
+    </Grid>
+    </StackLayout>
+</ContentPage>

@@ -12,7 +12,7 @@ namespace Aplicacion
 		public App ()
 		{
 			InitializeComponent();
-            MainPage = new Login.Login();
+            MainPage = new NavigationPage( new Login.Login() );
            //MainPage = new FacebookOAuthRequest("185999915438012", accesstokenresult: AccessToken);
 
         }

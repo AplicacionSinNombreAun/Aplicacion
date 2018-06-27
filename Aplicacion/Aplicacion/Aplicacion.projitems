@@ -16,6 +16,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Context\Conexion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Context\Model\RegistroDeUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Context\Model\Usuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookOAuthRequest.xaml.cs">
       <DependentUpon>FacebookOAuthRequest.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -35,6 +38,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pantallas\Registro.xaml.cs">
+      <DependentUpon>Registro.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)FacebookLogin\FacebookOAuthRequest.xaml">
@@ -44,6 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Login\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pantallas\Registro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

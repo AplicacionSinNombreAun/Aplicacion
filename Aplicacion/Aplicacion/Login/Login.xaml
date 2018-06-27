@@ -2,24 +2,39 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Aplicacion.Login.Login" BackgroundColor="White">
+    
     <Grid VerticalOptions="FillAndExpand"
           Margin="5">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="60*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="10*" />
 
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20*" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="20*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="40*" />
+            <ColumnDefinition Width="10*" />
         </Grid.ColumnDefinitions>
 
-        <Button Clicked="FacebookButton" Text="Facebook Login" Grid.Column="1" Grid.Row="1" BackgroundColor="#6f94df" TextColor="White" >
+
+
+
+        <Entry x:Name="UserLogin" Placeholder="Usuario" Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2" HorizontalTextAlignment="Center" PlaceholderColor="Gray" TextColor="Black" ></Entry>
+        <Entry x:Name="PassLogin" Placeholder="Constraseña" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" PlaceholderColor="Gray" TextColor="Black"></Entry>
+        <Button Clicked="IngresarLogin" Text="Ingresar" Grid.Column="1"  Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="#009a00" TextColor="White" ></Button>
+        <Button Clicked="RegistrarUser" Text="Régistrate" Grid.Column="1"  Grid.Row="4" BackgroundColor="#ff1a1a" TextColor="White" ></Button>
+        <Button Clicked="FacebookButton" Text="Facebook Login" Grid.Column="2" Grid.Row="4" BackgroundColor="#6f94df" TextColor="White" >
       
         </Button>
-        
+
     </Grid>
+
+    
 </ContentPage>
