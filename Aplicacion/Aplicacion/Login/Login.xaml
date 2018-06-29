@@ -29,7 +29,7 @@
         <Entry x:Name="UserLogin" Placeholder="Usuario" Grid.Row="1" Grid.Column="1"  Grid.ColumnSpan="2" HorizontalTextAlignment="Center" PlaceholderColor="Gray" TextColor="Black" ></Entry>
         <Entry x:Name="PassLogin" Placeholder="Constraseña" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" PlaceholderColor="Gray" TextColor="Black"></Entry>
         <Button Clicked="IngresarLogin" Text="Ingresar" Grid.Column="1"  Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="#009a00" TextColor="White" ></Button>
-        <Button Clicked="RegistrarUser" Text="Régistrate" Grid.Column="1"  Grid.Row="4" BackgroundColor="#ff1a1a" TextColor="White" ></Button>
+        <Button Clicked="RegistrarUser" Text="Régistrate" Grid.Column="1"  Grid.Row="4" BackgroundColor="#ff1a1a" TextColor="White" HeightRequest="70" ></Button>
         <Button Clicked="FacebookButton" Text="Facebook Login" Grid.Column="2" Grid.Row="4" BackgroundColor="#6f94df" TextColor="White" >
       
         </Button>

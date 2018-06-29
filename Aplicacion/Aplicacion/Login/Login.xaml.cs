@@ -47,7 +47,7 @@ namespace Aplicacion.Login
         }
         private void RegistrarUser(object sender, EventArgs e)
         {
-            Aplicacion.App.Current.MainPage.Navigation.PushAsync(new Registro());
+            Aplicacion.App.Current.MainPage.Navigation.PushAsync(new Registro(),true);
         }
 
         private void FacebookButton(object sender, EventArgs e)
