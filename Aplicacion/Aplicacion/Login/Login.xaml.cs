@@ -42,7 +42,7 @@ namespace Aplicacion.Login
             else
             {
                 //el usuario existe asi que se le da acceso 
-                Aplicacion.App.Current.MainPage = new MainPage();
+                Aplicacion.App.Current.MainPage = new PaginaNavegadora();
             }
         }
         private void RegistrarUser(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace Aplicacion.Login
                     if (Result.Transaccion.Operacion.Respuesta != "NO")
                     {
                         // si es distinto a NO se registro bien asi que lo envio a la pagina principal 
-                        Aplicacion.App.Current.MainPage = new MainPage();
+                        Aplicacion.App.Current.MainPage = new PaginaNavegadora();
                     }
                     else
                     {
@@ -91,7 +91,7 @@ namespace Aplicacion.Login
             else
             {
                 //el usuario ya existe en BD y facebook ya valido password asi que le doy acceso
-                Aplicacion.App.Current.MainPage = new MainPage();
+                Aplicacion.App.Current.MainPage = new PaginaNavegadora();
             }
           
             

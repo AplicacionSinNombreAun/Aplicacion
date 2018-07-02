@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Aplicacion.Pantallas"
+             x:Class="Aplicacion.Pantallas.PaginaNavegadora">
+    
+    <NavigationPage Icon="Inicio.png">
+        <x:Arguments>
+            <local:Pagina_Inicio />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Icon="Busqueda.png">
+        <x:Arguments>
+            <local:Busqueda />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Icon="Campana.png">
+        <x:Arguments>
+            <local:Notificaciones />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Icon="Calendario.png">
+        <x:Arguments>
+            <local:Reservas />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>

@@ -35,7 +35,7 @@ namespace Aplicacion.Pantallas
                 if (Result.Transaccion.Operacion.Respuesta == "OK")
                 {
                     //Se termina el registro del nuevo usuario y se le da acceso a la pagina principal 
-                    Aplicacion.App.Current.MainPage = new MainPage();
+                    Aplicacion.App.Current.MainPage = new PaginaNavegadora();
                 }
                 else
                 {
